@@ -1,17 +1,50 @@
+:root { --heading-text-color: #240f02; --body-text-color: #2a1a03; --light-tan-bg: #d7bc72; --lighter-tan-bg: #f0dca3; --green-bg: #cad9c9; --light-green-bg: #9bb899; --camo-brown: #837957; --camo-gray: rgb(204 204 204); --comic-red: #cc605f; }
+
+* { color: var(--body-text-color); }
+
+html { width: 100%; height: 100%; }
+
 nav { text-align: center; /* Center the navigation links */ margin-bottom: 20px; /* Space below the navigation bar */ }
 
-nav a { display: inline-block; /* Display links in a line */ margin: 0 10px; /* Spacing between navigation items */ text-decoration: none; color: #333333; /* Text color */ font-weight: bold; /* Make the text bold */ }
+/* Alternate background colors (and adjust text colors to compensate) */
+.section-header { background-color: var(--green-bg); height: 50px; }
 
-nav a:hover { color: #007bff; /* Color change on hover */ text-decoration: underline; /* Underline on hover */ }
+.info-box-opaque { background-color: var(--green-bg); display: flex; justify-content: center; border-radius: 5px; padding: 30px; }
 
-body { display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; padding: 0; }
+nav a { display: inline-block; /* Display links in a line */ margin: 0 10px; /* Spacing between navigation items */ text-decoration: none; color: black; /* Text color */ font-weight: bold; /* Make the text bold */ }
+
+/* Navbar */
+.navbar-custom { margin-bottom: 0; font-size: 0.9em; border-bottom: 1px solid rgba(255, 255, 255, 0.3); font-family: Montserrat, Geneva, sans-serif; text-transform: capitalize; font-weight: 600; display: flex; align-items: center; }
+
+.navbar-custom .nav li a { -o-transition: background .3s ease-in-out; -webkit-transition: background .3s ease-in-out; -moz-transition: background .3s ease-in-out; transition: background .3s ease-in-out; color: #222e23; font-family: ComicTextBold; font-size: 1.6rem; }
+
+.navbar-custom .nav li a:hover { color: #5a5c5a; background-color: transparent; }
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active { background-color: transparent; }
+
+.navbar-custom .nav li.active a { background-color: #9bb899; }
+
+.navbar-custom .nav li.active a:hover { color: #5a5c5a; }
+
+nav a:hover { color: white; /* Color change on hover */ text-decoration: underline; /* Underline on hover */ }
+
+body { display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; padding: 5; width: 100%; font-family: "Montserrat", Arial, serif; font-family: ComicText; background-color: var(--green-bg); color: black; text-align: center; }
 
 main { width: 80%; /* Adjust the width as needed */ max-width: 1200px; /* Optional: Sets a maximum width */ margin-top: 20px; margin-bottom: 20px; }
 
-.site-header { text-align: center; margin-bottom: 20px; width: 100%; background-color: #f8f8f8; /* Example background color */ border-bottom: 1px solid #e7e7e7; /* Example border */ }
+h1, h2, h3, h4, h5, h6 { margin: 35px 0; /*text-transform: uppercase;*/ font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow: 2px 2px 0 #403838; font-family: TWDTitleFont; font-weight: 400; letter-spacing: 4px; text-align: center; }
+
+p { margin: 0 0 25px; font-size: 15px; line-height: 1.5; text-align: center; }
+
+@media (min-width: 768px) { p { margin: 0 0 35px; font-size: 17px; line-height: 1.6; } }
+.site-header { text-align: center; margin-bottom: 20px; width: 100%; background-color: var(--green-bg); /* Example background color */ }
 
 .site-header h1 { margin-bottom: 10px; }
 
-.container { max-width: 800px; margin: 20 auto; padding: 15px; }
+.container { max-width: 700px; margin: 20 auto; padding: 15px; }
 
-.footer { width: 100%; background-color: #f8f8f8; border-top: 1px solid #e7e7e7; text-align: center; padding: 10px 0; }
+img { max-width: 100%; height: auto; display: block; /* Ensures images are centered if the width is less than the container */ margin: 0 auto; /* Center align the image */ border: 1px solid #ddd; /* Adds a subtle border */ box-shadow: 2px 2px 5px grey; /* Optional: Adds a slight shadow */ padding: 8px; /* Space around the image */ }
+
+footer a { color: var(--body-text-color); }
+
+.spacing { width: 20px; display: inline-block; }
