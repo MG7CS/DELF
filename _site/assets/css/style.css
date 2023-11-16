@@ -1,0 +1,17 @@
+nav { text-align: center; /* Center the navigation links */ margin-bottom: 20px; /* Space below the navigation bar */ }
+
+nav a { display: inline-block; /* Display links in a line */ margin: 0 10px; /* Spacing between navigation items */ text-decoration: none; color: #333333; /* Text color */ font-weight: bold; /* Make the text bold */ }
+
+nav a:hover { color: #007bff; /* Color change on hover */ text-decoration: underline; /* Underline on hover */ }
+
+body { display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; padding: 0; }
+
+main { width: 80%; /* Adjust the width as needed */ max-width: 1200px; /* Optional: Sets a maximum width */ margin-top: 20px; margin-bottom: 20px; }
+
+.site-header { text-align: center; margin-bottom: 20px; width: 100%; background-color: #f8f8f8; /* Example background color */ border-bottom: 1px solid #e7e7e7; /* Example border */ }
+
+.site-header h1 { margin-bottom: 10px; }
+
+.container { max-width: 800px; margin: 20 auto; padding: 15px; }
+
+.footer { width: 100%; background-color: #f8f8f8; border-top: 1px solid #e7e7e7; text-align: center; padding: 10px 0; }
